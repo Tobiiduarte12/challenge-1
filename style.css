@@ -115,6 +115,7 @@ body{
     }
     .img-container {
         height: 50vh;
+        border-radius: 15px 15px 0px 0px;
     }
     .info-card {
         border-radius: 0px 0px 15px 15px;
