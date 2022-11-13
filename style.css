@@ -6,89 +6,118 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    /* border: 1px solid; */
 }
 body{
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100vh;
     background-color: hsl(30, 38%, 92%);
 }
-.container{
-   display: flex;
-   width: 70vw;
-   height: 62vh;
-   margin: auto;
-   margin-top: 100px;
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px 200px;
+    width: 600px;
 }
-.img-container img{
-    width: 250px;
-    border-radius: 10px 0px 0px 10px;
-    height: 100%;
 
+.img-container img {
+    display: flex;
+    height: 70vh;
+    border-radius: 15px 0px 0px 15px;
 }
-.info-card{
-    width: 80%;
-    padding: 30px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    height: 70vh;
+    border-radius: 0px 15px 15px 0px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+.product h3 {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.tittle {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.product h3{
-    color: gainsboro;
-    letter-spacing: 3px;
-    font-size: 17px;
-}
-.tittle h1{
-    color: hsl(212, 21%, 14%);
+
+.tittle h1 {
     font-family: 'Fraunces', serif;
-    line-height: 1;
 }
-.tittle p{
+
+.tittle p {
     color: hsl(228, 12%, 48%);
-    font-size: 14px;
-    line-height: 1.8;
-    margin-top: 10px;
+    margin-bottom: 30px;
 }
-.price{
+
+.price {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
-.price h2{
+
+.price h2 {
     font-family: 'Fraunces', serif;
-    font-size: 30px;
     color: hsl(158, 36%, 37%);
+    font-size: 24px;
 }
-.price p{
+
+.price p {
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
 }
-.button button{
-    width: 90%;
-    height: 30px;
-    border-radius: 5px;
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button button {
+    padding: 10px;
+    background-color: hsl(158, 36%, 37%);    
     border: none;
-    background-color: hsl(158, 36%, 37%);
-    cursor: pointer;
+    border-radius: 10px;
+    width: 90%;
 }
-.button a{
-    text-decoration: none;
-    color: #ffff;
-    font-size: 15px;
-    font-weight: 500;
 
-}
-.fa-solid{
+.button i {
     color: #ffff;
 }
-.attribution{
-    margin-top: 130px;
-    
-}
-.button button:hover{
-    background-color: blue;
 
+.button a {
+    color: #ffff;
+    width: 90%;
 }
 
+ @media (max-width:375px) {
+    body {
+        margin-top: 100px;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-container {
+        height: 50vh;
+    }
+    .info-card {
+        border-radius: 0px 0px 15px 15px;
+    }
 
+ }
